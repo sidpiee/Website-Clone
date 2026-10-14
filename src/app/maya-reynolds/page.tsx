@@ -482,12 +482,12 @@ export default function MayaReynoldsPage() {
           aria-labelledby="story-title"
         >
           <Image
-            className="absolute top-[85px] left-0 h-[490px] w-[35%] object-cover object-top max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:mt-0 max-[760px]:ml-0 max-[760px]:h-[clamp(260px,78vw,304px)] max-[760px]:max-w-none max-[760px]:w-[calc(100%_+_6vw)] max-[760px]:object-[50%_10%]"
+            className="absolute top-[85px] left-0 h-[490px] w-[35%] object-cover object-top max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:mx-auto max-[760px]:mt-0 max-[760px]:h-auto max-[760px]:w-[70vw] max-[760px]:max-w-[280px]"
             src="/images/maya-reynolds/maya-reynolds.png"
             alt="Dr. Maya Reynolds, ready to welcome adults to therapy."
             width={1000}
             height={1500}
-            sizes="(max-width: 760px) 94vw, 53vw"
+            sizes="(max-width: 760px) min(70vw, 280px), 35vw"
             loading="lazy"
           />
           <h2
@@ -675,12 +675,12 @@ export default function MayaReynoldsPage() {
             </a>
           </div>
           <Image
-            className="absolute top-[84px] right-0 h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[51px] max-[760px]:ml-[11vw] max-[760px]:h-[269px] max-[760px]:w-[94%]"
+            className="absolute top-[84px] right-0 h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mx-auto max-[760px]:mt-[51px] max-[760px]:h-auto max-[760px]:w-[70vw] max-[760px]:max-w-[280px]"
             src="/images/maya-reynolds/maya-reynolds.png"
             alt="Dr. Maya Reynolds, available for adult therapy in Santa Monica and California."
             width={1000}
             height={1500}
-            sizes="(max-width: 760px) 94vw, 35vw"
+            sizes="(max-width: 760px) min(70vw, 280px), 34.4vw"
             loading="lazy"
           />
         </section>
