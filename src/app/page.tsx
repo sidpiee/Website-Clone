@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -190,12 +191,13 @@ export default function Home() {
           href="/"
           aria-label="Conejo Valley Family Counseling home"
         >
-          <img
+          <Image
             className="block h-auto w-full"
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
             alt="Conejo Valley Family Counseling"
-            width="450"
-            height="116"
+            width={450}
+            height={116}
+            sizes="(max-width: 420px) 178px, (max-width: 960px) 31vw, 19.6vw"
           />
         </a>
 
@@ -382,21 +384,23 @@ export default function Home() {
 
           <div className="pointer-events-none absolute inset-0 min-h-[540px] max-[960px]:relative max-[960px]:inset-auto max-[960px]:order-2 max-[960px]:mt-[55px] max-[960px]:min-h-[clamp(380px,74vw,600px)] max-[960px]:w-screen max-[960px]:self-start max-[760px]:mt-[58px] max-[760px]:h-[78vw] max-[760px]:min-h-0 max-[760px]:max-h-[304px] max-[760px]:w-screen">
             <div className="absolute top-0 left-0 h-full w-[34.1%] overflow-hidden max-[960px]:h-[88%] max-[960px]:w-[57%] max-[760px]:h-full max-[760px]:w-[58%]">
-              <img
+              <Image
                 className="block h-full w-full object-cover"
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
                 alt="Family therapy"
-                width="1400"
-                height="1200"
+                width={1400}
+                height={1200}
+                sizes="(max-width: 760px) 58vw, (max-width: 960px) 57vw, 34.1vw"
               />
             </div>
             <div className="absolute top-[32.8%] right-0 h-[67.2%] w-[9%] overflow-hidden max-[960px]:top-auto max-[960px]:right-[3%] max-[960px]:bottom-0 max-[960px]:h-[39%] max-[960px]:w-[39%] max-[960px]:border-[8px] max-[960px]:border-[#f5f4ef] max-[760px]:right-[3%] max-[760px]:h-[65.5%] max-[760px]:w-[39%] max-[760px]:border-[6px]">
-              <img
+              <Image
                 className="block h-full w-full object-cover object-[80%_center]"
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
                 alt="Child therapy"
-                width="900"
-                height="1100"
+                width={900}
+                height={1100}
+                sizes="(max-width: 960px) 39vw, 9vw"
               />
             </div>
           </div>
@@ -426,12 +430,13 @@ export default function Home() {
               ups and downs.
             </p>
           </div>
-          <img
+          <Image
             className="absolute top-[89px] right-0 h-[626px] w-[30.2%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[72px] max-[760px]:h-[clamp(190px,62.4vw,234px)] max-[760px]:w-full"
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg?format=1500w"
             alt="Sandy beach with gentle ocean waves and a cloudy sky."
-            width="1200"
-            height="1600"
+            width={1200}
+            height={1600}
+            sizes="(max-width: 760px) 88vw, 30.2vw"
           />
           <p className="font-cvc-paragraph absolute top-[376px] left-[35.1vw] m-0 w-[24.8%] text-[15px] leading-[1.8] text-[#60615b] max-[760px]:static max-[760px]:mt-[46px] max-[760px]:w-full max-[760px]:leading-[1.92]">
             First and foremost, we believe what you’re going through is real,
@@ -459,12 +464,13 @@ export default function Home() {
           <div className="ml-[11.5vw] mt-[47px] grid grid-cols-3 gap-[20px] max-[760px]:ml-0 max-[760px]:mt-[54px] max-[760px]:grid-cols-1 max-[760px]:gap-[46px]">
             {peopleWeHelp.map((person) => (
               <article key={person.title}>
-                <img
+                <Image
                   className="block aspect-[0.84/1] w-full object-cover max-[760px]:aspect-[1.08/1]"
                   src={person.image}
                   alt={person.alt}
-                  width="640"
-                  height="760"
+                  width={640}
+                  height={760}
+                  sizes="(max-width: 760px) 88vw, 27vw"
                 />
                 <h3 className="mt-8 mb-3 font-cvc-heading text-[21px] leading-[1.35] font-extralight max-[760px]:mt-[46px] max-[760px]:mb-[30px] max-[760px]:text-[22px] max-[760px]:leading-[1.36]">
                   {person.href ? (
@@ -490,13 +496,14 @@ export default function Home() {
 
         <section aria-label="Support and areas of expertise">
           <div className="relative isolate flex min-h-[516px] items-end overflow-hidden bg-[#2b2b2b] px-[8.75vw] pt-[120px] pb-[85px] max-[760px]:min-h-[557px] max-[760px]:items-center max-[760px]:pr-[10vw] max-[760px]:py-[90px] max-[760px]:pl-[6vw]">
-            <img
+            <Image
               className="absolute inset-0 -z-10 h-full w-full object-cover object-center"
               src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/27b4f80c-ca73-4d1f-824e-ec29a2211142/Jennifer+A+-+Images+%282%29.png?format=1500w"
               alt=""
               aria-hidden="true"
-              width="780"
-              height="482"
+              width={780}
+              height={482}
+              sizes="100vw"
             />
             <div
               className="absolute inset-0 z-0 bg-[#2b2b2b]/75"
@@ -561,12 +568,13 @@ export default function Home() {
           >
             We’re here to make a difference.
           </h2>
-          <img
+          <Image
             className="absolute top-[107px] right-0 h-[683px] w-[22.5%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[50px] max-[760px]:h-[269px] max-[760px]:w-full"
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/389808ad-7273-4e03-a32b-c172aa735f12/Jennifer+A+-+Images+%286%29.jpg"
             alt="A woman and a child in white dresses dancing on a sandy beach at sunset."
-            width="900"
-            height="1400"
+            width={900}
+            height={1400}
+            sizes="(max-width: 760px) 88vw, 22.5vw"
           />
           <div className="mt-[45px] grid max-w-[751px] grid-cols-2 gap-[20px] max-[760px]:mt-[45px] max-[760px]:max-w-none max-[760px]:grid-cols-1 max-[760px]:gap-7">
             <div>
@@ -611,12 +619,13 @@ export default function Home() {
         className="relative mx-auto min-h-[659px] w-full max-w-[1600px] bg-white max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[56px] max-[760px]:pb-[55px]"
         aria-labelledby="family-heading"
       >
-        <img
+        <Image
           className="absolute top-[85px] left-0 h-[490px] w-[53.3%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:mt-0 max-[760px]:ml-0 max-[760px]:h-[clamp(260px,78vw,304px)] max-[760px]:max-w-none max-[760px]:w-[calc(100%_+_6vw)]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg?format=1000w"
           alt="A family spending time together outdoors."
-          width="1000"
-          height="725"
+          width={1000}
+          height={725}
+          sizes="(max-width: 760px) 100vw, 53.3vw"
         />
         <h2
           className="absolute top-[402px] left-[57.8%] m-0 max-w-[470px] font-cvc-heading text-[clamp(38px,3.4vw,46px)] leading-[1.35] font-extralight tracking-[-0.02em] max-[760px]:static max-[760px]:mt-[11px] max-[760px]:max-w-none max-[760px]:text-[30px] max-[760px]:leading-[1.48]"
@@ -664,12 +673,13 @@ export default function Home() {
         className="relative mx-auto min-h-[780px] w-full max-w-[1600px] overflow-hidden bg-[#f5f4ef] max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[56px] max-[760px]:pb-[67px]"
         aria-labelledby="appointment-heading"
       >
-        <img
+        <Image
           className="absolute top-[192px] left-0 h-[468px] w-[11.7%] object-cover object-center max-[760px]:top-[56px] max-[760px]:h-[199px] max-[760px]:w-[48.5%]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg?format=300w"
           alt="A small shell resting on the sand."
-          width="300"
-          height="900"
+          width={300}
+          height={900}
+          sizes="(max-width: 760px) 48.5vw, 11.7vw"
         />
         <div className="absolute top-[84px] left-[20.2%] w-[37%] max-w-[470px] max-[760px]:static max-[760px]:mt-[267px] max-[760px]:w-full max-[760px]:max-w-none">
           <p className="font-cvc-paragraph m-0 text-[11px] tracking-[0.13em] text-[#60615b] uppercase">
@@ -702,12 +712,13 @@ export default function Home() {
             Book now
           </a>
         </div>
-        <img
+        <Image
           className="absolute top-[84px] right-[0%] h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[51px] max-[760px]:ml-[11vw] max-[760px]:h-[269px] max-[760px]:w-[94%]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg?format=750w"
           alt="A child looking out across the beach."
-          width="750"
-          height="990"
+          width={750}
+          height={990}
+          sizes="(max-width: 760px) 88vw, 34.4vw"
         />
       </section>
 
@@ -721,12 +732,13 @@ export default function Home() {
               rel="noreferrer"
               aria-label="Conejo Valley Family Counseling home"
             >
-              <img
+              <Image
                 className="block h-auto w-full"
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
                 alt="Conejo Valley Counseling"
-                width="450"
-                height="116"
+                width={450}
+                height={116}
+                sizes="(max-width: 420px) 88vw, (max-width: 760px) 322px, 25.5vw"
               />
             </a>
             <p className="font-cvc-paragraph mt-[30px] ml-[22px] max-w-[327px] text-[13px] leading-[1.85] text-[#60615b] max-[760px]:mt-[11px] max-[760px]:ml-[20px] max-[760px]:text-[13px] max-[760px]:leading-[1.85]">
