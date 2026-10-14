@@ -128,3 +128,13 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  .font-cvc-heading {
+    font-family: var(--font-maitree);
+  }
+
+  .font-cvc-script {
+    font-family: var(--font-cherish);
+  }
+}
