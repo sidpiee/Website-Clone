@@ -137,4 +137,8 @@
   .font-cvc-script {
     font-family: var(--font-cherish);
   }
+
+  .font-cvc-paragraph {
+    font-family: var(--font-nanum-gothic);
+  }
 }

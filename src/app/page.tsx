@@ -122,6 +122,58 @@ const areasOfExpertise = [
   ],
 ];
 
+const specialties = [
+  {
+    title: "Trauma",
+    href: "/trauma-counseling-newbury-park",
+    description:
+      "We don’t always know when and how we’ve experienced trauma. In therapy, we’ll work together to help you process your past, understand what’s causing you to stay ‘stuck,’ and regain a sense of safety, control, and hope. You don’t have to carry your burdens alone.",
+  },
+  {
+    title: "EMDR",
+    href: "/emdr-therapy-newbury-park",
+    description:
+      "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
+  },
+  {
+    title: "Dissociation",
+    href: "/dissociative-identity-disorder-therapist-newbury-park",
+    description:
+      "The feeling of losing time, hearing conflicting voices, or questioning your sense of self can be overwhelming. In therapy, we’ll help you understand these experiences, recognize your own triggers, and create a sense of balance and identity so that you can feel more grounded.",
+  },
+  {
+    title: "Special Needs Parenting",
+    href: "/counseling-special-needs-parents-newbury-park",
+    description:
+      "Parenting a child with special needs presents unique challenges and complex emotions. We provide compassionate support through lived experience and expertise to help you navigate this journey with tools, understanding, and self-care.",
+  },
+];
+
+const footerNavigation = [
+  { label: "Home", href: "/home" },
+  { label: "About", href: "/therapists-newbury-park" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Contact", href: "/contact" },
+];
+
+const footerTeam = [
+  { label: "Jennifer Anderson", href: "/jennifer-anderson" },
+  { label: "Heather Williams-Baumgart", href: "/heather-williams-baumgart" },
+  { label: "Autumn Bodily", href: "/autumn-bodily" },
+  { label: "Candace Bletscher", href: "/candace-bletscher" },
+  { label: "Samantha Johnson", href: "/samantha-johnson" },
+  { label: "Rosa Gomez", href: "/rosa-gomez" },
+  { label: "Chad Flores", href: "/chad-flores" },
+  { label: "Simran Sidhu", href: "/simran-sidhu" },
+  { label: "Jessica Jauregui", href: "/jessica-jauregui" },
+];
+
+const footerLegal = [
+  { label: "Terms", href: "/terms" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#f5f4ef] font-sans text-[#33332f]">
@@ -252,7 +304,7 @@ export default function Home() {
                   }}
                 >
                   <div className="grid gap-2 border-b border-[#33332f]/15 pb-5">
-                    <p className="m-0 font-serif text-[28px] font-normal">
+                    <p className="font-cvc-paragraph m-0 font-serif text-[28px] font-normal">
                       Explore
                     </p>
                     <span className="text-[13px] text-[#60615b]">
@@ -287,7 +339,7 @@ export default function Home() {
           aria-labelledby="hero-title"
         >
           <div className="absolute top-0 left-[34.1%] z-10 flex h-full w-[56.9%] flex-col pt-[6px] pr-[20px] pb-[10px] pl-[clamp(64px,8.3vw,132px)] max-[960px]:relative max-[960px]:top-auto max-[960px]:left-auto max-[960px]:h-auto max-[960px]:w-full max-[960px]:px-[7.5vw] max-[960px]:pt-0 max-[960px]:pb-0">
-            <p className="m-0 max-w-[390px] text-[12px] leading-[1.8] font-normal tracking-[0.14em] text-[#33332f] uppercase max-[960px]:max-w-[460px] max-[760px]:text-[11px]">
+            <p className="font-cvc-paragraph m-0 max-w-[390px] text-[12px] leading-[1.8] font-normal tracking-[0.14em] text-[#33332f] uppercase max-[960px]:max-w-[460px] max-[760px]:text-[11px]">
               Online &amp; in-person counseling in Newbury Park &amp; across CA
             </p>
             <div className="mt-[127px] max-[960px]:mt-12">
@@ -311,7 +363,7 @@ export default function Home() {
                   </span>
                 </span>
               </h1>
-              <p className="mt-[32px] max-w-[550px] text-[15px] leading-[1.8] text-[#60615b] max-[960px]:mt-7 max-[960px]:max-w-[620px]">
+              <p className="font-cvc-paragraph mt-[32px] max-w-[550px] text-[15px] leading-[1.8] text-[#60615b] max-[960px]:mt-7 max-[960px]:max-w-[620px]">
                 Specialized therapy for adults, couples, teens, and children to
                 reflect, heal, and grow.
               </p>
@@ -360,11 +412,11 @@ export default function Home() {
             now.
           </h2>
           <div className="absolute top-[376px] left-[8.75vw] w-[24.8%] max-[760px]:static max-[760px]:mt-[11px] max-[760px]:w-full">
-            <p className="m-0 max-w-[320px] text-[15px] leading-[1.8]  tracking-normal text-[#33332f]  uppercase">
+            <p className="font-cvc-paragraph m-0 max-w-[320px] text-[15px] leading-[1.8]  tracking-normal text-[#33332f]  uppercase">
               At Conejo Valley Family Counseling we want to make that hope a
               reality.
             </p>
-            <p className="mt-[15px] max-[760px]:max-w-[300px] text-[15px] leading-[1.92] text-[#60615b]">
+            <p className="font-cvc-paragraph mt-[15px] max-[760px]:max-w-[300px] text-[15px] leading-[1.92] text-[#60615b]">
               Whether you’re an adult seeking personal growth, looking to work
               through your trauma, a couple working on your relationship, or a
               parent looking for support for your child, we provide a
@@ -379,7 +431,7 @@ export default function Home() {
             width="1200"
             height="1600"
           />
-          <p className="absolute top-[376px] left-[35.1vw] m-0 w-[24.8%] text-[15px] leading-[1.8] text-[#60615b] max-[760px]:static max-[760px]:mt-[46px] max-[760px]:w-full max-[760px]:leading-[1.92]">
+          <p className="font-cvc-paragraph absolute top-[376px] left-[35.1vw] m-0 w-[24.8%] text-[15px] leading-[1.8] text-[#60615b] max-[760px]:static max-[760px]:mt-[46px] max-[760px]:w-full max-[760px]:leading-[1.92]">
             First and foremost, we believe what you’re going through is real,
             valid, and worthy of support. Our team offers clients in the Newbury
             Park area and across CA an environment to discover a new life and a
@@ -426,7 +478,7 @@ export default function Home() {
                     person.title
                   )}
                 </h3>
-                <p className="m-0 max-w-[360px] text-[13px] leading-[1.8] text-[#60615b]">
+                <p className="font-cvc-paragraph m-0 max-w-[360px] text-[13px] leading-[1.8] text-[#60615b]">
                   {person.description}
                 </p>
               </article>
@@ -498,7 +550,7 @@ export default function Home() {
           className="relative mx-auto min-h-[898px] w-full max-w-[1600px] overflow-hidden bg-[#e3d9ca] px-[8.75vw] pt-[110px] pb-[90px] max-[760px]:min-h-[1503px] max-[760px]:pr-[6vw] max-[760px]:pt-[86px] max-[760px]:pb-[76px] max-[760px]:pl-[6vw]"
           aria-labelledby="how-title"
         >
-          <p className="m-0 text-[12px] tracking-[0.12em] text-[#60615b] uppercase">
+          <p className="font-cvc-paragraph m-0 text-[12px] tracking-[0.12em] text-[#60615b] uppercase">
             How we work
           </p>
           <h2
@@ -516,11 +568,11 @@ export default function Home() {
           />
           <div className="mt-[45px] grid max-w-[751px] grid-cols-2 gap-[20px] max-[760px]:mt-[45px] max-[760px]:max-w-none max-[760px]:grid-cols-1 max-[760px]:gap-7">
             <div>
-              <p className="m-0 text-[12px] leading-[1.8] tracking-[0.11em] text-[#33332f] uppercase">
+              <p className="font-cvc-paragraph m-0 text-[12px] leading-[1.8] tracking-[0.11em] text-[#33332f] uppercase">
                 The clients we work with are balancing so many things at once,
                 it’s often hard for them to put themselves first.
               </p>
-              <p className="mt-5 text-[14px] leading-[1.8] text-[#60615b]">
+              <p className="font-cvc-paragraph mt-5 text-[14px] leading-[1.8] text-[#60615b]">
                 Here, your needs are always top priority. Our team takes the
                 time to deeply listen to our clients in order to truly
                 understand their story and their struggles. We recognize that no
@@ -530,7 +582,7 @@ export default function Home() {
                 ready to help.
               </p>
             </div>
-            <p className="m-0 text-[14px] leading-[1.8] text-[#60615b]">
+            <p className="font-cvc-paragraph m-0 text-[14px] leading-[1.8] text-[#60615b]">
               Sometimes we may gently challenge you to look at things
               differently and other times we may explore your emotions, all
               while encouraging you to practice what you’ve learned in your
@@ -552,6 +604,235 @@ export default function Home() {
           </a>
         </section>
       </main>
+
+      <section
+        className="relative mx-auto min-h-[659px] w-full max-w-[1600px] bg-white max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[56px] max-[760px]:pb-[55px]"
+        aria-labelledby="family-heading"
+      >
+        <img
+          className="absolute top-[85px] left-0 h-[490px] w-[53.3%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:h-[clamp(260px,78vw,304px)] max-[760px]:w-full"
+          src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg?format=1000w"
+          alt="A family spending time together outdoors."
+          width="1000"
+          height="725"
+        />
+        <h2
+          className="absolute top-[402px] left-[57.8%] m-0 max-w-[470px] font-cvc-heading text-[clamp(38px,3.4vw,46px)] leading-[1.35] font-extralight tracking-[-0.02em] max-[760px]:static max-[760px]:mt-[11px] max-[760px]:max-w-none max-[760px]:text-[34px] max-[760px]:leading-[1.31]"
+          id="family-heading"
+        >
+          Honoring where you’ve been &amp; helping shape where you’re headed.
+        </h2>
+      </section>
+
+      <section
+        className="mx-auto min-h-[951px] w-full max-w-[1600px] bg-white px-[8.75vw] pt-[86px]  max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[68px] max-[760px]:pb-[80px]"
+        aria-labelledby="specialties-heading"
+      >
+        <div className="grid grid-cols-3 gap-x-[59px] max-[760px]:grid-cols-1 max-[760px]:gap-0">
+          <h2
+            className="m-0 max-w-[330px] font-cvc-heading text-[clamp(34px,2.8vw,38px)] leading-[1.4] font-extralight tracking-[-0.02em] max-[760px]:max-w-none max-[760px]:text-[32px] max-[760px]:leading-[1.35]"
+            id="specialties-heading"
+          >
+            Our specialties include…
+          </h2>
+          <div className="col-span-2 grid grid-cols-2 gap-x-[59px] gap-y-[43px] max-[760px]:col-span-1 max-[760px]:mt-[52px] max-[760px]:grid-cols-1 max-[760px]:gap-y-[50px]">
+            {specialties.map((specialty) => (
+              <article className="min-w-0" key={specialty.title}>
+                <h3 className="mt-[25px] mb-[13px] font-cvc-heading text-[23px] leading-[1.3] font-extralight">
+                  {specialty.title}
+                </h3>
+                <p className="font-cvc-paragraph m-0 text-[14px] leading-[1.88] text-[#60615b]">
+                  {specialty.description}
+                </p>
+                <a
+                  className="mt-[21px] inline-flex border-b border-current pb-[5px] text-[10px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f]"
+                  href={`${sourceSite}${specialty.href}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Learn more
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="relative mx-auto min-h-[780px] w-full max-w-[1600px] overflow-hidden bg-[#f5f4ef] max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[56px] max-[760px]:pb-[67px]"
+        aria-labelledby="appointment-heading"
+      >
+        <img
+          className="absolute top-[192px] left-0 h-[468px] w-[11.7%] object-cover object-center max-[760px]:top-[56px] max-[760px]:h-[199px] max-[760px]:w-[49%]"
+          src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg?format=300w"
+          alt="A small shell resting on the sand."
+          width="300"
+          height="900"
+        />
+        <div className="absolute top-[84px] left-[20.2%] w-[37%] max-w-[470px] max-[760px]:static max-[760px]:mt-[262px] max-[760px]:w-full max-[760px]:max-w-none">
+          <p className="font-cvc-paragraph m-0 text-[11px] tracking-[0.13em] text-[#60615b] uppercase">
+            Schedule an appointment
+          </p>
+          <h2
+            className="mt-[93px] mb-0 font-cvc-heading text-[clamp(38px,3.4vw,46px)] leading-[1.35] font-extralight tracking-[-0.02em] max-[760px]:mt-[31px] max-[760px]:text-[34px] max-[760px]:leading-[1.31]"
+            id="appointment-heading"
+          >
+            Find a therapist who is the right fit for you.
+          </h2>
+          <p className="font-cvc-paragraph mt-[16px] mb-0 text-[14px] leading-[1.8] text-[#60615b] max-[760px]:mt-[15px] max-[760px]:text-[14px] max-[760px]:leading-[1.85]">
+            Coming to therapy is a courageous decision, and connecting with the
+            right kind of therapist makes all the difference. We understand that
+            your journey is personal, and we’re here to support you with care
+            and understanding every step of the way. Each member of our team
+            brings dedicated expertise and a commitment to support you in your
+            struggles. We want you to feel prioritized, understood, and
+            empowered.
+          </p>
+          <p className="font-cvc-paragraph mt-[15px] mb-0 text-[14px] leading-[1.7] text-[#60615b]">
+            Click the button below to schedule an appointment.
+          </p>
+          <a
+            className="mt-[18px] inline-flex min-h-[48px] items-center justify-center rounded-full border border-[#33332f] px-[24px] text-[11px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:bg-[#33332f] hover:text-[#f5f4ef] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#66877f]"
+            href={`${sourceSite}/contact`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book now
+          </a>
+        </div>
+        <img
+          className="absolute top-[84px] right-[0%] h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[51px] max-[760px]:ml-[12vw] max-[760px]:h-[269px] max-[760px]:w-[82.5%]"
+          src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg?format=750w"
+          alt="A child looking out across the beach."
+          width="750"
+          height="990"
+        />
+      </section>
+
+      <footer className="mx-auto w-full max-w-[1600px] bg-white text-[#33332f]">
+        <div className="grid min-h-[470px] grid-cols-[42%_16.5%_20.7%_20.8%] px-[5vw] pt-[57px] pb-[48px] max-[760px]:min-h-0 max-[760px]:grid-cols-1 max-[760px]:px-[6vw] max-[760px]:pt-[73px] max-[760px]:pb-[44px]">
+          <div className="max-[760px]:max-w-[360px]">
+            <a
+              className="inline-flex w-[clamp(280px,25.5vw,360px)] max-[760px]:w-[322px] max-[420px]:w-full"
+              href={`${sourceSite}/home`}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Conejo Valley Family Counseling home"
+            >
+              <img
+                className="block h-auto w-full"
+                src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7116bf54-a0e1-4128-81d8-24fd9960c7ed/Conejo+Valley+Counseling+Logo.png?format=1500w"
+                alt="Conejo Valley Counseling"
+                width="450"
+                height="116"
+              />
+            </a>
+            <p className="font-cvc-paragraph mt-[30px] ml-[22px] max-w-[327px] text-[13px] leading-[1.85] text-[#60615b] max-[760px]:mt-[11px] max-[760px]:ml-[20px] max-[760px]:text-[13px] max-[760px]:leading-[1.85]">
+              We want to make getting started simple. You’re welcome to come
+              into our office in Newbury Park or schedule virtual appointments
+              from anywhere in CA—whatever works best for you.
+            </p>
+          </div>
+
+          <FooterLinkGroup
+            className="max-[760px]:order-1 max-[760px]:mt-[38px] max-[760px]:ml-[42px]"
+            heading="Navigate"
+            links={footerNavigation}
+          />
+          <FooterLinkGroup
+            className="max-[760px]:order-3 max-[760px]:mt-[43px] max-[760px]:ml-[42px]"
+            heading="Our Team"
+            links={footerTeam}
+          />
+          <div className="max-[760px]:order-2 max-[760px]:mt-[43px] max-[760px]:ml-[42px]">
+            <h2 className="m-0 text-[11px] font-normal tracking-[0.13em] uppercase">
+              Contact
+            </h2>
+            <address className="mt-[24px] max-w-[235px] text-[13px] leading-[1.85] text-[#60615b] not-italic">
+              925 Broadbeck Dr
+              <br />
+              Suites 200 and 225
+              <br />
+              Newbury Park, CA 91320
+              <br />
+              <a
+                className="transition-colors hover:text-[#66877f]"
+                href="mailto:info@conejovalleycounseling.com"
+              >
+                info@conejovalleycounseling.com
+              </a>
+              <br />
+              <a
+                className="transition-colors hover:text-[#66877f]"
+                href="tel:+18052423120"
+              >
+                805.242.3120
+              </a>
+              <br />
+              <br />
+              Serving Thousand Oaks, Westlake Village, Camarillo, Moorpark,
+              &amp; Simi Valley.
+            </address>
+          </div>
+        </div>
+
+        <div className="flex min-h-[40px] items-center bg-[#8cb5aa] px-[6.8vw] py-2 text-[10px] tracking-[0.03em] text-white max-[760px]:min-h-[68px] max-[760px]:justify-center max-[760px]:px-[8vw] max-[760px]:py-[10px]">
+          <div className="flex flex-wrap items-center gap-x-[22px] gap-y-1 max-[760px]:justify-center max-[760px]:gap-x-[18px]">
+            {footerLegal.map((link) => (
+              <a
+                className="transition-opacity hover:opacity-75 text-lg"
+                href={`${sourceSite}${link.href}`}
+                target="_blank"
+                rel="noreferrer"
+                key={link.label}
+              >
+                {link.label}
+              </a>
+            ))}
+
+            <a
+              className="transition-opacity hover:opacity-75"
+              href="https://walkerstrategyco.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Website by Walker Strategy Co.
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+function FooterLinkGroup({
+  className,
+  heading,
+  links,
+}: {
+  className?: string;
+  heading: string;
+  links: { label: string; href: string }[];
+}) {
+  return (
+    <div className={className}>
+      <h2 className="m-0 text-[11px] font-normal tracking-[0.13em] uppercase">
+        {heading}
+      </h2>
+      <ul className="mt-[24px] grid list-none gap-[8px] p-0 text-[12px] leading-[1.5] text-[#60615b] max-[760px]:gap-[8px]">
+        {links.map((link) => (
+          <li key={link.label}>
+            <a
+              className="transition-colors hover:text-[#66877f]"
+              href={`${sourceSite}${link.href}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

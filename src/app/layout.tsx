@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { Cherish, Geist, Geist_Mono, Inter, Maitree } from "next/font/google";
+import {
+  Cherish,
+  Geist,
+  Geist_Mono,
+  Inter,
+  Maitree,
+  Nanum_Gothic,
+} from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -8,6 +15,11 @@ const maitree = Maitree({
   weight: "200",
   subsets: ["latin"],
   variable: "--font-maitree",
+});
+const nanumGothic = Nanum_Gothic({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-nanum-gothic",
 });
 const cherish = Cherish({
   weight: "400",
@@ -41,6 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         geistMono.variable,
         inter.variable,
         maitree.variable,
+        nanumGothic.variable,
         cherish.variable,
         "font-sans",
       )}
