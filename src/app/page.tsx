@@ -335,16 +335,18 @@ export default function Home() {
 
       <main id="main-content" className="w-full">
         <section
-          className="relative mx-auto h-[540px] w-full max-w-[1600px] max-[960px]:flex max-[960px]:h-auto max-[960px]:min-h-0 max-[960px]:flex-col"
+          className="relative mx-auto h-[540px] w-full max-w-[1600px] max-[960px]:flex max-[960px]:h-auto max-[960px]:min-h-0 max-[960px]:flex-col max-[760px]:pb-[24px]"
           aria-labelledby="hero-title"
         >
-          <div className="absolute top-0 left-[34.1%] z-10 flex h-full w-[56.9%] flex-col pt-[6px] pr-[20px] pb-[10px] pl-[clamp(64px,8.3vw,132px)] max-[960px]:relative max-[960px]:top-auto max-[960px]:left-auto max-[960px]:h-auto max-[960px]:w-full max-[960px]:px-[7.5vw] max-[960px]:pt-0 max-[960px]:pb-0">
-            <p className="font-cvc-paragraph m-0 max-w-[390px] text-[12px] leading-[1.8] font-normal tracking-[0.14em] text-[#33332f] uppercase max-[960px]:max-w-[460px] max-[760px]:text-[11px]">
-              Online &amp; in-person counseling in Newbury Park &amp; across CA
+          <div className="absolute top-0 left-[34.1%] z-10 flex h-full w-[56.9%] flex-col pt-[6px] pr-[20px] pb-[10px] pl-[clamp(64px,8.3vw,132px)] max-[960px]:relative max-[960px]:top-auto max-[960px]:left-auto max-[960px]:h-auto max-[960px]:w-full max-[960px]:px-[7.5vw] max-[960px]:pt-0 max-[960px]:pb-0 max-[760px]:px-[6vw] max-[760px]:pt-[60px]">
+            <p className="font-cvc-paragraph m-0 max-w-[390px] text-[12px] leading-[1.8] font-normal tracking-[0.14em] text-[#33332f] uppercase max-[960px]:max-w-[460px] max-[760px]:max-w-none max-[760px]:text-[15px] max-[760px]:tracking-[0.12em]">
+              Online &amp; in-person counseling{" "}
+              <br className="hidden max-[420px]:block" />
+              in Newbury Park &amp; across CA
             </p>
-            <div className="mt-[127px] max-[960px]:mt-12">
+            <div className="mt-[127px] max-[960px]:mt-12 max-[760px]:mt-[31px]">
               <h1
-                className="m-0 max-w-[610px] font-cvc-heading text-[clamp(45px,3.8vw,50px)] leading-[1.37] font-extralight tracking-[-0.02em] max-[960px]:max-w-[720px] max-[960px]:text-[clamp(38px,8vw,52px)] max-[960px]:leading-[1.22] max-[420px]:text-[38px]"
+                className="m-0 max-w-[610px] font-cvc-heading text-[clamp(45px,3.8vw,50px)] leading-[1.37] font-extralight tracking-[-0.02em] max-[960px]:max-w-[720px] max-[960px]:text-[clamp(38px,8vw,52px)] max-[960px]:leading-[1.33] max-[760px]:leading-[1.32] max-[420px]:text-[38px]"
                 id="hero-title"
               >
                 <span className="block max-[960px]:inline">
@@ -356,19 +358,19 @@ export default function Home() {
                 <span className="block max-[960px]:inline">
                   finally begin to{" "}
                   <span className="whitespace-nowrap">
-                    <span className="mr-[52px] inline-block origin-left scale-x-[1.43] font-cvc-script text-[1.5em] leading-none font-normal tracking-normal text-[#93b3ab] max-[960px]:mr-0 max-[960px]:scale-x-100 max-[960px]:text-[1em]">
+                    <span className="mr-[52px] inline-block origin-left scale-x-[1.43] font-cvc-script text-[1.5em] leading-none font-normal tracking-normal text-[#93b3ab] max-[960px]:mr-0 max-[960px]:scale-x-[1.2] max-[960px]:text-[1.5em]">
                       thrive
                     </span>
                     .
                   </span>
                 </span>
               </h1>
-              <p className="font-cvc-paragraph mt-[32px] max-w-[550px] text-[15px] leading-[1.8] text-[#60615b] max-[960px]:mt-7 max-[960px]:max-w-[620px]">
+              <p className="font-cvc-paragraph mt-[32px] max-w-[550px] text-[15px] leading-[1.8] text-[#60615b] max-[960px]:mt-7 max-[960px]:max-w-[620px] max-[760px]:mt-[30px] max-[760px]:leading-[1.92]">
                 Specialized therapy for adults, couples, teens, and children to
                 reflect, heal, and grow.
               </p>
               <a
-                className="link-underline mt-[33px] inline-flex items-center pb-2 text-[12px] tracking-[0.15em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f] max-[960px]:mt-10"
+                className="link-underline mt-[33px] inline-flex items-center pb-2 text-[12px] tracking-[0.15em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f] max-[960px]:mt-10 max-[760px]:mt-[24px] max-[760px]:min-h-[35px] max-[760px]:pb-[9px] max-[760px]:text-[13.5px] max-[760px]:tracking-[0.12em]"
                 href={`${sourceSite}/contact`}
                 target="_blank"
                 rel="noreferrer"
@@ -378,8 +380,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute inset-0 min-h-[540px] max-[960px]:relative max-[960px]:inset-auto max-[960px]:order-2 max-[960px]:mt-[55px] max-[960px]:min-h-[clamp(380px,85vw,650px)] max-[960px]:w-[78vw] max-[960px]:self-start">
-            <div className="absolute top-0 left-0 h-full w-[34.1%] overflow-hidden max-[960px]:h-[88%] max-[960px]:w-[90%]">
+          <div className="pointer-events-none absolute inset-0 min-h-[540px] max-[960px]:relative max-[960px]:inset-auto max-[960px]:order-2 max-[960px]:mt-[55px] max-[960px]:min-h-[clamp(380px,74vw,600px)] max-[960px]:w-screen max-[960px]:self-start max-[760px]:mt-[58px] max-[760px]:h-[78vw] max-[760px]:min-h-0 max-[760px]:max-h-[304px] max-[760px]:w-screen">
+            <div className="absolute top-0 left-0 h-full w-[34.1%] overflow-hidden max-[960px]:h-[88%] max-[960px]:w-[57%] max-[760px]:h-full max-[760px]:w-[58%]">
               <img
                 className="block h-full w-full object-cover"
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/80513bd1-30ee-4a2d-aaf6-782d9be095ce/Jennifer+A+-+Images+%2866%29.jpg"
@@ -388,7 +390,7 @@ export default function Home() {
                 height="1200"
               />
             </div>
-            <div className="absolute top-[32.8%] right-0 h-[67.2%] w-[9%] overflow-hidden max-[960px]:top-auto max-[960px]:right-[-22%] max-[960px]:bottom-0 max-[960px]:h-[39%] max-[960px]:w-[51%] max-[960px]:border-[8px] max-[960px]:border-[#f5f4ef]">
+            <div className="absolute top-[32.8%] right-0 h-[67.2%] w-[9%] overflow-hidden max-[960px]:top-auto max-[960px]:right-[3%] max-[960px]:bottom-0 max-[960px]:h-[39%] max-[960px]:w-[39%] max-[960px]:border-[8px] max-[960px]:border-[#f5f4ef] max-[760px]:right-[3%] max-[760px]:h-[65.5%] max-[760px]:w-[39%] max-[760px]:border-[6px]">
               <img
                 className="block h-full w-full object-cover object-[80%_center]"
                 src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/3643a7ac-ff62-4927-b96e-9e65ecff0521/Jennifer+A+-+Images+%2867%29.jpg"
@@ -405,7 +407,7 @@ export default function Home() {
           aria-labelledby="hope-title"
         >
           <h2
-            className="absolute top-[205px] left-[8.75vw] max-w-[610px] font-cvc-heading text-[clamp(36px,3vw,40px)] leading-[1.48] font-extralight tracking-[-0.02em] max-[760px]:static max-[760px]:text-[34px] max-[760px]:leading-[1.32]"
+            className="absolute top-[205px] left-[8.75vw] max-w-[610px] font-cvc-heading text-[clamp(36px,3vw,40px)] leading-[1.48] font-extralight tracking-[-0.02em] max-[1020px]:max-w-[55vw] max-[760px]:static max-[760px]:max-w-none max-[760px]:text-[34px] max-[760px]:leading-[1.32]"
             id="hope-title"
           >
             You’re holding onto hope that life can be better than it is right
@@ -416,7 +418,7 @@ export default function Home() {
               At Conejo Valley Family Counseling we want to make that hope a
               reality.
             </p>
-            <p className="font-cvc-paragraph mt-[15px] max-[760px]:max-w-[300px] text-[15px] leading-[1.92] text-[#60615b]">
+            <p className="font-cvc-paragraph mt-[15px] text-[15px] leading-[1.92] text-[#60615b]">
               Whether you’re an adult seeking personal growth, looking to work
               through your trauma, a couple working on your relationship, or a
               parent looking for support for your child, we provide a
@@ -425,7 +427,7 @@ export default function Home() {
             </p>
           </div>
           <img
-            className="absolute top-[89px] right-0 h-[626px] w-[30.2%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[46px] max-[760px]:h-[clamp(190px,62.4vw,234px)] max-[760px]:w-full"
+            className="absolute top-[89px] right-0 h-[626px] w-[30.2%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[72px] max-[760px]:h-[clamp(190px,62.4vw,234px)] max-[760px]:w-full"
             src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7a40691c-70a5-4307-b9ae-974592087a8f/Jennifer+A+-+Images+%283%29.jpg?format=1500w"
             alt="Sandy beach with gentle ocean waves and a cloudy sky."
             width="1200"
@@ -442,7 +444,7 @@ export default function Home() {
         </section>
 
         <section
-          className="mx-auto min-h-[955px] w-full max-w-[1600px] bg-white px-[5vw] pt-[86px] pb-[110px] max-[760px]:min-h-[2029px] max-[760px]:pr-[6vw] max-[760px]:pt-[63px] max-[760px]:pb-[80px] max-[760px]:pl-[6vw]"
+          className="mx-auto min-h-[955px] w-full max-w-[1600px] bg-white px-[5vw] pt-[86px] pb-[110px] max-[760px]:min-h-[2028px] max-[760px]:pr-[6vw] max-[760px]:pt-[63px] max-[760px]:pb-[54px] max-[760px]:pl-[6vw]"
           aria-labelledby="who-title"
         >
           <h2
@@ -450,11 +452,11 @@ export default function Home() {
             id="who-title"
           >
             Who we{" "}
-            <span className="font-cvc-script text-[1.25em] text-[#91b1a9]">
+            <span className="font-cvc-script text-[1.25em] text-[#91b1a9] max-[760px]:text-[1em] max-[760px]:leading-none">
               help
             </span>
           </h2>
-          <div className="ml-[11.5vw] mt-[47px] grid grid-cols-3 gap-[20px] max-[760px]:ml-0 max-[760px]:mt-[43px] max-[760px]:grid-cols-1 max-[760px]:gap-[52px]">
+          <div className="ml-[11.5vw] mt-[47px] grid grid-cols-3 gap-[20px] max-[760px]:ml-0 max-[760px]:mt-[54px] max-[760px]:grid-cols-1 max-[760px]:gap-[46px]">
             {peopleWeHelp.map((person) => (
               <article key={person.title}>
                 <img
@@ -464,7 +466,7 @@ export default function Home() {
                   width="640"
                   height="760"
                 />
-                <h3 className="mt-8 mb-3 font-cvc-heading text-[21px] leading-[1.35] font-extralight max-[760px]:mt-[44px] max-[760px]:mb-[26px]">
+                <h3 className="mt-8 mb-3 font-cvc-heading text-[21px] leading-[1.35] font-extralight max-[760px]:mt-[46px] max-[760px]:mb-[30px] max-[760px]:text-[22px] max-[760px]:leading-[1.36]">
                   {person.href ? (
                     <a
                       className="transition-colors hover:text-[#66877f]"
@@ -478,7 +480,7 @@ export default function Home() {
                     person.title
                   )}
                 </h3>
-                <p className="font-cvc-paragraph m-0 max-w-[360px] text-[13px] leading-[1.8] text-[#60615b]">
+                <p className="font-cvc-paragraph m-0 max-w-[360px] text-[13px] leading-[1.8] text-[#60615b] max-[760px]:text-[16px] max-[760px]:leading-[1.8]">
                   {person.description}
                 </p>
               </article>
@@ -610,14 +612,14 @@ export default function Home() {
         aria-labelledby="family-heading"
       >
         <img
-          className="absolute top-[85px] left-0 h-[490px] w-[53.3%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:h-[clamp(260px,78vw,304px)] max-[760px]:w-full"
+          className="absolute top-[85px] left-0 h-[490px] w-[53.3%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:left-auto max-[760px]:mt-0 max-[760px]:ml-0 max-[760px]:h-[clamp(260px,78vw,304px)] max-[760px]:max-w-none max-[760px]:w-[calc(100%_+_6vw)]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/6f1501bf-74a5-4c57-a957-8ce4c5876848/Jennifer+A+-+Images+%285%29.jpg?format=1000w"
           alt="A family spending time together outdoors."
           width="1000"
           height="725"
         />
         <h2
-          className="absolute top-[402px] left-[57.8%] m-0 max-w-[470px] font-cvc-heading text-[clamp(38px,3.4vw,46px)] leading-[1.35] font-extralight tracking-[-0.02em] max-[760px]:static max-[760px]:mt-[11px] max-[760px]:max-w-none max-[760px]:text-[34px] max-[760px]:leading-[1.31]"
+          className="absolute top-[402px] left-[57.8%] m-0 max-w-[470px] font-cvc-heading text-[clamp(38px,3.4vw,46px)] leading-[1.35] font-extralight tracking-[-0.02em] max-[760px]:static max-[760px]:mt-[11px] max-[760px]:max-w-none max-[760px]:text-[30px] max-[760px]:leading-[1.48]"
           id="family-heading"
         >
           Honoring where you’ve been &amp; helping shape where you’re headed.
@@ -625,23 +627,23 @@ export default function Home() {
       </section>
 
       <section
-        className="mx-auto min-h-[951px] w-full max-w-[1600px] bg-white px-[8.75vw] pt-[86px]  max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[68px] max-[760px]:pb-[80px]"
+        className="mx-auto min-h-[951px] w-full max-w-[1600px] bg-white px-[8.75vw] pt-[86px]  max-[760px]:min-h-0 max-[760px]:px-[6vw] max-[760px]:pt-[68px] max-[760px]:pb-[67px]"
         aria-labelledby="specialties-heading"
       >
         <div className="grid grid-cols-3 gap-x-[59px] max-[760px]:grid-cols-1 max-[760px]:gap-0">
           <h2
-            className="m-0 max-w-[330px] font-cvc-heading text-[clamp(34px,2.8vw,38px)] leading-[1.4] font-extralight tracking-[-0.02em] max-[760px]:max-w-none max-[760px]:text-[32px] max-[760px]:leading-[1.35]"
+            className="m-0 max-w-[330px] font-cvc-heading text-[clamp(34px,2.8vw,38px)] leading-[1.4] font-extralight tracking-[-0.02em] max-[760px]:max-w-none max-[760px]:text-[32px] max-[760px]:leading-[1.22]"
             id="specialties-heading"
           >
             Our specialties include…
           </h2>
-          <div className="col-span-2 grid grid-cols-2 gap-x-[59px] gap-y-[43px] max-[760px]:col-span-1 max-[760px]:mt-[52px] max-[760px]:grid-cols-1 max-[760px]:gap-y-[50px]">
+          <div className="col-span-2 grid grid-cols-2 gap-x-[59px] gap-y-[43px] max-[760px]:col-span-1 max-[760px]:mt-[42px] max-[760px]:grid-cols-1 max-[760px]:gap-y-[50px]">
             {specialties.map((specialty) => (
               <article className="min-w-0" key={specialty.title}>
-                <h3 className="mt-[25px] mb-[13px] font-cvc-heading text-[23px] leading-[1.3] font-extralight">
+                <h3 className="mt-[25px] mb-[13px] font-cvc-heading text-[23px] leading-[1.3] font-extralight max-[760px]:text-[22px] max-[760px]:leading-[1.36] max-[760px]:mb-[30px]">
                   {specialty.title}
                 </h3>
-                <p className="font-cvc-paragraph m-0 text-[14px] leading-[1.88] text-[#60615b]">
+                <p className="font-cvc-paragraph m-0 text-[14px] leading-[1.88] text-[#60615b] max-[760px]:mt-[15px] max-[760px]:text-[16px] max-[760px]:leading-[1.8]">
                   {specialty.description}
                 </p>
                 <a
@@ -663,13 +665,13 @@ export default function Home() {
         aria-labelledby="appointment-heading"
       >
         <img
-          className="absolute top-[192px] left-0 h-[468px] w-[11.7%] object-cover object-center max-[760px]:top-[56px] max-[760px]:h-[199px] max-[760px]:w-[49%]"
+          className="absolute top-[192px] left-0 h-[468px] w-[11.7%] object-cover object-center max-[760px]:top-[56px] max-[760px]:h-[199px] max-[760px]:w-[48.5%]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/1b9495e0-ce39-4826-9df9-e24de99da82f/Jennifer+A+-+Images+%2812%29.jpg?format=300w"
           alt="A small shell resting on the sand."
           width="300"
           height="900"
         />
-        <div className="absolute top-[84px] left-[20.2%] w-[37%] max-w-[470px] max-[760px]:static max-[760px]:mt-[262px] max-[760px]:w-full max-[760px]:max-w-none">
+        <div className="absolute top-[84px] left-[20.2%] w-[37%] max-w-[470px] max-[760px]:static max-[760px]:mt-[267px] max-[760px]:w-full max-[760px]:max-w-none">
           <p className="font-cvc-paragraph m-0 text-[11px] tracking-[0.13em] text-[#60615b] uppercase">
             Schedule an appointment
           </p>
@@ -679,7 +681,7 @@ export default function Home() {
           >
             Find a therapist who is the right fit for you.
           </h2>
-          <p className="font-cvc-paragraph mt-[16px] mb-0 text-[14px] leading-[1.8] text-[#60615b] max-[760px]:mt-[15px] max-[760px]:text-[14px] max-[760px]:leading-[1.85]">
+          <p className="font-cvc-paragraph mt-[16px] mb-0 text-[14px] leading-[1.8] text-[#60615b] max-[760px]:mt-[16px] max-[760px]:text-[16px] max-[760px]:leading-[1.8]">
             Coming to therapy is a courageous decision, and connecting with the
             right kind of therapist makes all the difference. We understand that
             your journey is personal, and we’re here to support you with care
@@ -688,11 +690,11 @@ export default function Home() {
             struggles. We want you to feel prioritized, understood, and
             empowered.
           </p>
-          <p className="font-cvc-paragraph mt-[15px] mb-0 text-[14px] leading-[1.7] text-[#60615b]">
+          <p className="font-cvc-paragraph mt-[15px] mb-0 text-[14px] leading-[1.7] text-[#60615b] max-[760px]:text-[16px] max-[760px]:leading-[1.8]">
             Click the button below to schedule an appointment.
           </p>
           <a
-            className="mt-[18px] inline-flex min-h-[48px] items-center justify-center rounded-full border border-[#33332f] px-[24px] text-[11px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:bg-[#33332f] hover:text-[#f5f4ef] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#66877f]"
+            className="mt-[18px] inline-flex min-h-[48px] items-center justify-center rounded-full border border-[#33332f] px-[24px] text-[11px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:bg-[#33332f] hover:text-[#f5f4ef] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#66877f] max-[760px]:mt-[16px]"
             href={`${sourceSite}/contact`}
             target="_blank"
             rel="noreferrer"
@@ -701,7 +703,7 @@ export default function Home() {
           </a>
         </div>
         <img
-          className="absolute top-[84px] right-[0%] h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[51px] max-[760px]:ml-[12vw] max-[760px]:h-[269px] max-[760px]:w-[82.5%]"
+          className="absolute top-[84px] right-[0%] h-[575px] w-[34.4%] object-cover object-center max-[760px]:relative max-[760px]:top-auto max-[760px]:right-auto max-[760px]:mt-[51px] max-[760px]:ml-[11vw] max-[760px]:h-[269px] max-[760px]:w-[94%]"
           src="https://images.squarespace-cdn.com/content/v1/670423e106da6c036366fd10/7557312a-044d-4489-a9d1-6f43ee9888b1/Jennifer+A+-+Images+%2811%29.jpg?format=750w"
           alt="A child looking out across the beach."
           width="750"
