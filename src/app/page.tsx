@@ -368,7 +368,7 @@ export default function Home() {
                 reflect, heal, and grow.
               </p>
               <a
-                className="mt-[33px] inline-flex items-center border-b border-current pb-2 text-[12px] tracking-[0.15em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f] max-[960px]:mt-10"
+                className="link-underline mt-[33px] inline-flex items-center pb-2 text-[12px] tracking-[0.15em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f] max-[960px]:mt-10"
                 href={`${sourceSite}/contact`}
                 target="_blank"
                 rel="noreferrer"
@@ -595,7 +595,7 @@ export default function Home() {
             </p>
           </div>
           <a
-            className="mt-[52px] inline-flex border-b border-current pb-2 text-[11px] tracking-[0.14em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f]"
+            className="link-underline mt-[52px] inline-flex pb-2 text-[11px] tracking-[0.14em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f]"
             href={`${sourceSite}/therapists-newbury-park`}
             target="_blank"
             rel="noreferrer"
@@ -645,7 +645,7 @@ export default function Home() {
                   {specialty.description}
                 </p>
                 <a
-                  className="mt-[21px] inline-flex border-b border-current pb-[5px] text-[10px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f]"
+                  className="link-underline mt-[21px] inline-flex pb-[5px] text-[10px] tracking-[0.13em] text-[#33332f] uppercase transition-colors hover:text-[#66877f] focus-visible:text-[#66877f]"
                   href={`${sourceSite}${specialty.href}`}
                   target="_blank"
                   rel="noreferrer"

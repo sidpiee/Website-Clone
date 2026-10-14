@@ -142,3 +142,33 @@
     font-family: var(--font-nanum-gothic);
   }
 }
+
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-underline::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: currentColor;
+  content: "";
+  pointer-events: none;
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition: transform 400ms ease;
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline::after {
+    transition: none;
+  }
+}
